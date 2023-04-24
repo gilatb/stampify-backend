@@ -1,10 +1,11 @@
-from enum import Enum
+from enum import Enum, auto
 
 
 class UserRole(str, Enum):
-    ADMIN = 'admin'
-    BUSINESS = 'business'
-    CUSTOMER = 'customer'
+    ADMIN = auto()
+    BUSINESS = auto()
+    CUSTOMER = auto()
+    USER = auto()
 
 
 class CardStatus(str, Enum):
